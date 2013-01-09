@@ -1,0 +1,43 @@
+# In repository we don't need to have:
+
+# Compiled object files and libraries
+*.slo
+*.lo
+*.o
+*.a
+*.la
+*.lai
+*.so
+*.dll
+*.dylib
+
+# Generated .pro.user and Makefiles
+*.pro.user
+*.pro.user.*
+Makefile*
+
+# Generated MOC, resource and UI files
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# Debug and Release directories (created under Windows, not Linux)
+Debug/
+Release/
+
+# .log files
+*.log
+
+# Built windows .exe and linux binaries
+*.exe
+*.dll
+anifest_browser
+
+# Windows-specific files
+Thumbs.db
+desktop.ini
+# Mac-specific things
+.DS_Store
+
+# Editor temporary files
+*~
