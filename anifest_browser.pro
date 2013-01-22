@@ -6,6 +6,12 @@
 
 QT       += core gui webkit
 
+# Qt 5 compatibility
+contains(QT_VERSION, ^5.*) {
+  QT += widgets webkitwidgets
+  DEFINES += QT5
+}
+
 TARGET = anifest_browser
 TEMPLATE = app
 
