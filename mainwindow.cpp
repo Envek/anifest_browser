@@ -13,6 +13,8 @@ MainWindow::MainWindow(const QUrl &url, QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->browser->settings()->setAttribute(QWebSettings::LocalContentCanAccessRemoteUrls,true);
+    ui->browser->settings()->setAttribute(QWebSettings::LocalContentCanAccessFileUrls,true);
     ui->browser->settings()->setAttribute(QWebSettings::PluginsEnabled, true); // Enable Flash
     ui->browser->load(url);
 }
